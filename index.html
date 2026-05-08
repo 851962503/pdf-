@@ -1,27 +1,113 @@
- <!DOCTYPE html>
+<!DOCTYPE html>                                                                                                     
   <html lang="en">                                                                                                    
-  <head>                                                    
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Privacy Policy - ScanMate</title>                                                                        
-      <style>
-          body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px;        
-  line-height: 1.6; }                                                                                                 
-          h1 { color: #FA7310; }
+  <head>                                                                                                              
+      <meta charset="UTF-8">                                                                                          
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">                                          
+      <title>DocSnap - Scan Documents to PDF</title>                                                                  
+      <style>                                                                                                         
+          * { margin: 0; padding: 0; box-sizing: border-box; }                                                        
+          body { font-family: -apple-system, sans-serif; color: #333; }                                               
+                                                            
+          .hero {                                                                                                     
+              background: linear-gradient(135deg, #FA7310, #D9380A);
+              color: white;
+              text-align: center;
+              padding: 80px 20px;}
+          .hero h1 { font-size: 48px; font-weight: 800; margin-bottom: 16px; }                                        
+          .hero p { font-size: 20px; opacity: 0.9; margin-bottom: 32px; }
+          .badge img { height: 52px; }                                                                                
+                                                                                                                      
+          .features {                                                                                                 
+              display: flex;                                                                                          
+              flex-wrap: wrap;                              
+              justify-content: center;                                                                                
+              gap: 24px;
+              padding: 60px 20px;                                                                                     
+              background: #FFF8F5;                                                                                    
+          }                                                                                                           
+          .feature {                                                                                                  
+              background: white;                                                                                      
+              border-radius: 16px;                          
+              padding: 28px;                                                                                          
+              width: 260px;                                 
+              box-shadow: 0 4px 16px rgba(0,0,0,0.08);                                                                
+              text-align: center;                           
+          }
+          .feature .icon { font-size: 36px; margin-bottom: 12px; }
+          .feature h3 { font-size: 17px; margin-bottom: 8px; color: #FA7310; }                                        
+          .feature p { font-size: 14px; color: #666; line-height: 1.6; }                                              
+                                                                                                                      
+          .privacy {                                                                                                  
+              max-width: 720px;                             
+              margin: 0 auto;                                                                                         
+              padding: 60px 20px;                                                                                     
+          }                                                                                                           
+          .privacy h2 { font-size: 28px; color: #FA7310; margin-bottom: 16px; }                                       
+          .privacy h3 { font-size: 18px; margin: 24px 0 8px; }                                                        
+          .privacy p { font-size: 15px; line-height: 1.8; color: #555; }                                              
+                                                                                                                      
+          footer {                                                                                                    
+              text-align: center;                                                                                     
+              padding: 24px;                                                                                          
+              background: #222;                             
+              color: #aaa;
+              font-size: 13px;                                                                                        
+          }                                                                                                           
       </style>                                                                                                        
   </head>                                                                                                             
   <body>                                                                                                              
-      <h1>Privacy Policy</h1>                                                                                         
-      <p><strong>Effective Date:</strong> May 7, 2026</p>   
-      <h2>Data Collection</h2>                                                                                        
-      <p>ScanMate does not collect, store, or transmit any personal data. All scanned documents are stored locally on 
-  your device.</p>                                                                                                    
                                                                                                                       
-      <h2>Camera & Photo Library Access</h2>                                                                          
-      <p>We request camera access to scan documents and photo library access to import existing images. These
-  permissions are used solely for app functionality and no data is uploaded to external servers.</p>                  
+  <section class="hero">                                                                                              
+      <h1>DocSnap</h1>                                                                                                
+      <p>Scan any document. Save as PDF. Share instantly.</p>                                                         
+      <!-- 上架后把下面的链接换成真实 App Store 地址 -->                                                              
+      <a class="badge" href="#">                                                                                      
+          <img src="" alt="Download on
+   App Store"></a>                                                                                                    
+  </section>                                                
+                                                                                                                      
+  <section class="features">                                
+      <div class="feature">
+          <div class="icon">📷</div>
+          <h3>Smart Scan</h3>                                                                                         
+          <p>Auto edge detection for perfect document crops every time.</p>                                           
+      </div>                                                                                                          
+      <div class="feature">                                                                                           
+          <div class="icon">📄</div>                                                                                  
+          <h3>Multi-Page PDF</h3>                                                                                     
+          <p>Combine multiple scans into a single professional PDF.</p>
+      </div>                                                                                                          
+      <div class="feature">                                                                                           
+          <div class="icon">📤</div>                                                                                  
+          <h3>Instant Share</h3>                                                                                      
+          <p>Send via WhatsApp, Gmail, Google Drive, and more.</p>                                                    
+      </div>                                                                                                          
+      <div class="feature">                                 
+          <div class="icon">🔒</div>                                                                                  
+          <h3>100% Private</h3>                             
+          <p>No account needed. All files stored locally on your device.</p>
+      </div>
+  </section>
+
+  <section class="privacy">
+      <h2>Privacy Policy</h2>
+      <p><strong>Effective Date:</strong> May 8, 2026</p>                                                             
+                                                                                                                      
+      <h3>Data Collection</h3>                                                                                        
+      <p>DocSnap does not collect, store, or transmit any personal data. All scanned documents are stored locally on  
+  your device only.</p>                                                                                               
+  
+      <h3>Camera & Photo Library</h3>                                                                                 
+      <p>Camera access is used solely to scan documents. Photo library access is used solely to import existing
+  images. No data is uploaded to any server.</p>                                                                      
                                                             
-      <h2>Contact</h2>                                                                                                
-      <p>For questions, email: your-email@example.com</p>   
+      <h3>Support</h3>                                                                                                
+      <p>For help or feedback, contact us at: <a href="mailto:1263959588@qq.com">your-email@example.com</a></p>
+  </section>                                                                                                          
+                                                            
+  <footer>                                                                                                            
+      <p>© 2026 DocSnap · <a href="#" style="color:#FA7310;">Privacy Policy</a></p>
+  </footer>                                                                                                           
+                                                                                                                      
   </body>                                                                                                             
-  </html>
+  </html>       
